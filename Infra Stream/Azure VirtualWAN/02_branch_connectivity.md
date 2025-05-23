@@ -10,7 +10,7 @@ In this challenge, you will connect one of the hubs to a preconfigured VPN devic
 
 * Configure VPN GW pre-deployed in the hub1 to connect to the VPN device.
 * Use BGP for route propagation.
-      * Use these tunnel parameters (custom IPSec configuration):
+* Use these tunnel parameters (custom IPSec configuration):
 
     ```
     Link IP address / FQDN = 20.91.140.166 / jnthackpfsense.swedencentral.cloudapp.azure.com
@@ -39,7 +39,7 @@ Sample topology:
 ## Success Criteria
 
 * Confirm that the tunnels are established, routes from on-premises are being propagated via BGP to the hubs, and to the individual VMs in the spoke networks.
-* Confirm connectivity between branches as well as between branches and VNets (same hub and across hubs)
+* Confirm connectivity between branch and VNets (same hub and across hubs)
 * (bonus) Show that the 192.168.0.0/24 route is not being propagated, while all other routes are.
 
 ## Learning Resources
