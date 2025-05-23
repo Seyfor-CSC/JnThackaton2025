@@ -1,181 +1,194 @@
 # Hackathon Assignment
 
-## Cíl hackathonu
+The goal of the hackathon is to containerize the “InfoPortal” application:
 
-Containerizace aplikace **InfoPortal**:
+- **Frontend:** Angular running on Tomcat
+  - target: deploy via Azure Static Web Apps / AKS Cluster
+- **Backend:** Java application on Tomcat
+  - target: deploy to AKS
+- **Database:** PostgreSQL
+  - target: migrate to Azure Database for PostgreSQL (PaaS)
 
-- **Frontend:** Angular běžící na Tomcat  
-  → cílové nasazení: Azure Static Web Apps / AKS Cluster
-- **Backend:** Java aplikace na Tomcat  
-  → cílové nasazení: AKS
-- **Databáze:** PostgreSQL  
-  → migrace na Azure Database for PostgreSQL (PaaS)
+**Additional requirements:**
 
-**Další požadavky:**
-
-- Integrace SSO s Entra ID (Azure AD)
-- Hackathon poběží v sandboxu (samostatný Azure subscription)
-- Zadání vychází ze společné schůzky Seyfor / Microsoft / J&T, lze upravit dle potřeby
+- Integrate SSO with Entra ID (Azure AD)
+- Hackathon will run in a sandbox (separate Azure subscription)
+- Assignment based on joint session with Seyfor / Microsoft / J&T, can be adjusted as needed
 
 ---
 
 ## Hackathon Challenges – Objectives, Success Criteria & Documentation
 
-### Challenge 1 – Containerizace Frontendu + Backend
+### Challenge 1 – Containerization of Frontend + Backend
 
-**Cíl:**  
-Vytvořit Dockerfile pro Angular frontend a Java backend a ověřit, že aplikace lze sestavit a spustit lokálně v kontejnerech.
+**Objective:** Create Dockerfiles for the Angular frontend and Java backend and verify that the applications can be built and run locally in containers.
 
-**Kritéria úspěchu:**
-- Dockerfile existuje pro frontend i backend
-- Image lze sestavit lokálně (`docker build`)
-- Image lze spustit lokálně
-- Frontend komunikuje s backendem
+This step focuses on the initial containerization of both parts of the application. You are expected to write working Dockerfiles and ensure that both frontend and backend can communicate correctly when run as containers on your local machine.
 
-**Dokumentace:**  
+**Success Criteria:**
+
+- Dockerfiles exist for both frontend and backend.
+- Image can be built locally using docker build.
+- Image can be run locally.
+- Frontend communicates properly with the backend.
+
+**Documentation:**
+
+- [Docker](https://docs.docker.com/get-started/)
 - [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 
 ---
 
-### Challenge 2 – Migrace na Azure Database for PostgreSQL
+### Challenge 2 – Migration to Azure Database for PostgreSQL
 
-**Cíl:**  
-Migrovat databázi na Azure Database for PostgreSQL (Flexible Server).
+**Objective:** Migrate the database to Azure Database for PostgreSQL (Flexible Server).
 
-**Kritéria úspěchu:**
-- Azure PostgreSQL Flexible Server je vytvořen
-- Data úspěšně migrována (např. pomocí `pg_dump`/`pg_restore`)
-- Backend se připojuje k nové databázi
+**Success Criteria:**
 
-**Dokumentace:**  
-- [Azure Database for PostgreSQL dokumentace](https://learn.microsoft.com/en-us/azure/postgresql/)
+- Azure PostgreSQL Flexible Server is created.
+- Data successfully migrated (e.g. using pg_dump/pg_restore).
+- Backend connects to the new database.
+
+**Documentation:**
+
+- [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/)
 - [Migration guide](https://learn.microsoft.com/en-us/azure/dms/tutorial-postgresql-azure-postgresql-online)
 
 ---
 
-### Challenge 3 – Vytvoření AKS Clusteru
+### Challenge 3 – Build AKS Cluster
 
-**Cíl:**  
-Vytvořit AKS cluster.
+**Objective:** Create an AKS cluster.
 
-**Kritéria úspěchu:**
-- AKS cluster je vytvořen a `kubectl` nakonfigurován
-- `kubectl get nodes` vrací Ready uzly
+**Success Criteria:**
 
-**Dokumentace:**  
-- [Azure Kubernetes Service (AKS) dokumentace](https://learn.microsoft.com/en-us/azure/aks/)
-- [az aks](https://learn.microsoft.com/en-us/cli/azure/aks)
+- AKS cluster is created and kubectl is configured.
+- kubectl get nodes returns Ready nodes.
+
+**Documentation:**
+
+- [AKS](https://learn.microsoft.com/en-us/azure/aks/)
+- [Azure CLI AKS](https://learn.microsoft.com/en-us/cli/azure/aks)
 
 ---
 
 ### Challenge 4 – Build Images for Frontend + Backend
 
-**Cíl:**  
-Nastavit automatizované buildy Docker image pro frontend a backend pomocí GitLab CI/CD a push do Azure Container Registry (ACR).
+**Objective:** Set up automated builds of the frontend and backend Docker images using GitLab CI/CD, and push these images to Azure Container Registry (ACR).
 
-**Kritéria úspěchu:**
-- GitLab CI pipeline úspěšně buildí image
-- Image jsou pushnuty do ACR
-- Image jsou správně tagované (např. verzemi)
+This challenge builds on the Dockerfiles created in Challenge 1. The goal here is to implement automated image builds using a GitLab CI pipeline and publish the resulting images to ACR.
 
-**Dokumentace:**  
-- [Azure Container Registry dokumentace](https://learn.microsoft.com/en-us/azure/container-registry/)
-- [GitLab CI/CD dokumentace](https://docs.gitlab.com/ee/ci/)
+**Success Criteria:**
+
+- GitLab CI pipeline builds images successfully.
+- Images are pushed to Azure Container Registry.
+- Images are tagged appropriately (e.g. version tags).
+
+**Documentation:**
+
+- [Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/)
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
 
 ---
 
-### Challenge 5 – Deployment do AKS
+### Challenge 5 – Deployment to AKS
 
-**Cíl:**  
-Nasazení pomocí YAML souborů nebo Helm chartů přes CI/CD pipeline.
+**Objective:** Deploy using fixed YAML files or Helm charts via CI/CD pipeline.
 
-**Kritéria úspěchu:**
-- YAML nebo Helm chart existuje
-- CI/CD pipeline nasazuje do AKS
-- Pody jsou ve stavu Running
-- Aplikace je dostupná
+**Success Criteria:**
 
-**Dokumentace:**  
-- [Helm dokumentace](https://helm.sh/docs/)
-- [Quickstart: Deploy AKS](https://learn.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal)
+- YAML or Helm charts are available.
+- CI/CD pipeline deploys to AKS.
+- Pods are in Running state.
+- Application is accessible.
+
+**Documentation:**
+
+- [Helm](https://helm.sh/docs/)
+- [Deploy to AKS](https://learn.microsoft.com/en-us/azure/aks/kubernetes-walkthrough)
 
 ---
 
 ### Challenge 6 – Azure Static Web Apps
 
-**Cíl:**  
-Nasadit frontend pomocí Azure Static Web Apps.
+**Objective:** Deploy frontend using Azure Static Web Apps.
 
-**Kritéria úspěchu:**
-- Static Web App instance je vytvořena
-- Frontend komunikuje s backendem v AKS
-- Aplikace je dostupná přes URL
-- Funkcionalita snippetů funguje
+After the initial deployment of the entire application to AKS, the team will explore an alternative deployment method for the frontend using Azure Static Web Apps.
 
-**Dokumentace:**  
-- [Azure Static Web Apps dokumentace](https://learn.microsoft.com/en-us/azure/static-web-apps/)
+**Success Criteria:**
+
+- A Static Web App instance is created.
+- The frontend successfully communicates with the backend running in AKS.
+- Application is accessible via URL.
+- The snippet functionality works as expected.
+
+**Documentation:**
+
+- [Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/)
 
 ---
 
 ### Challenge 7 – Advanced Secret Management
 
-**Cíl:**  
-Použít Azure Key Vault a SecretProviderClass v AKS.
+**Objective:** Use Azure Key Vault and SecretProviderClass in AKS.
 
-**Kritéria úspěchu:**
-- Key Vault obsahuje tajemství
-- AKS má povolený Secret CSI driver
-- SecretProviderClass je vytvořen
-- Secret je namountován do kontejneru
+**Success Criteria:**
 
-**Dokumentace:**  
-- [Azure Key Vault dokumentace](https://learn.microsoft.com/en-us/azure/key-vault/)
-- [CSI driver pro AKS](https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-driver)
+- Key Vault contains the secrets.
+- AKS has Secret CSI driver enabled.
+- SecretProviderClass is created.
+- Secret is mounted into the container.
 
----
+**Documentation:**
 
-## Volitelné výzvy
-
-### Azure Container Apps
-
-**Cíl:**  
-Nasadit backend pomocí Azure Container Apps.
-
-**Kritéria úspěchu:**
-- Container App je vytvořen
-- Backend běží
-- Endpoint je dostupný
-
-**Dokumentace:**  
-- [Azure Container Apps dokumentace](https://learn.microsoft.com/en-us/azure/container-apps/)
+- [Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/)
+- [CSI driver](https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-driver)
 
 ---
 
-### Monitoring AKS
+### Optional Challenge – Azure Container Apps
 
-**Cíl:**  
-Implementovat monitoring pomocí Prometheus + Grafana + Application Insights.
+**Objective:** Deploy the backend using Azure Container Apps.
 
-**Kritéria úspěchu:**
-- Prometheus + Grafana jsou nasazeny v AKS
-- AKS metriky jsou viditelné v dashboardech
-- Application Insights je aktivní pro backend
+**Success Criteria:**
 
-**Dokumentace:**  
+- Container App is created.
+- Backend is deployed and running.
+- Endpoint is accessible.
+
+**Documentation:**
+
+- [Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/)
+
+---
+
+### Optional Challenge – Monitoring AKS
+
+**Objective:** Implement monitoring using Prometheus + Grafana + Application Insights.
+
+**Success Criteria:**
+
+- Prometheus + Grafana are deployed to AKS.
+- AKS metrics are visible in dashboards.
+- Application Insights is active for the backend.
+
+**Documentation:**
+
 - [Azure Monitor for containers](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/)
-- [Application Insights OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview)
+- [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
 
 ---
 
-### API Management
+### Optional Challenge – API Management
 
-**Cíl:**  
-Vyzkoušet integraci s Azure API Management.
+**Objective:** Try integrating with Azure API Management.
 
-**Kritéria úspěchu:**
-- API Management instance je vytvořena
-- Backend API je importováno do APIM
-- API je úspěšně voláno přes APIM endpoint
+**Success Criteria:**
 
-**Dokumentace:**  
-- [Azure API Management dokumentace](https://learn.microsoft.com/en-us/azure/api-management/)
+- API Management instance is created.
+- Backend API is imported into APIM.
+- API is successfully called via APIM endpoint.
+
+**Documentation:**
+
+- [Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/)
