@@ -14,17 +14,17 @@ This hack will introduce you to the concept of Azure Virtual WAN. You will start
 
 ## Challenges
 
-* Challenge 1: **[Simple Virtual WAN](./Student/01_simple_vwan.md)**
+* Challenge 1: **[Simple Virtual WAN](./01_simple_vwan.md)**
   * Deploy a basic Virtual WAN to interconnect virtual networks
 
-* Challenge 2: **[Branch connectivity](./Student/02_branch_connectivity.md)**
+* Challenge 2: **[Branch connectivity](./02_branch_connectivity.md)**
   * Bring branch connections to your Virtual WAN with Site-to-Site VPN
 
-* Challenge 3: **[Isolated VNets](./Student/03_isolated_vnets.md)**
+* Challenge 3: **[Isolated VNets](./03_isolated_vnets.md)**
   * Use custom routing to isolate a virtual network
 
-* Challenge 4: **[Secured Virtual HUB](./Student/04_secured_hub.md)**
+* Challenge 4: **[Secured Virtual HUB](./04_secured_hub.md)**
   * Deploy Azure Firewall to secure your virtual hub
 
-* Challenge 5: **[Secured publishing](./Student/05_secured_publishing.md)**
+* Challenge 5: **[Secured publishing](./05_secured_publishing.md)**
   * Set up Azure Front Door to securely publish web applications
