@@ -12,20 +12,20 @@ In this challenge, you will connect one of the hubs to a preconfigured VPN devic
 * Use BGP for route propagation.
       * Use these tunnel parameters (custom IPSec configuration):
 
-        ```text
-        Link IP address / FQDN = 20.91.140.166 / jnthackpfsense.swedencentral.cloudapp.azure.com
-        Link BGP address = 10.100.0.4
-        Link ASN = 65504
-        SA Lifetime in seconds = 10800
-        IKE Phase 1 
-            Encryption = AES256
-            Integrity/PRF = SHA256
-            DH Group = DHGroup14
-        IKE Phase 2
-            IPsec Encryption = GCMAES128
-            IPsec Integrity = GCMAES128
-            PFS Group = None
-        ```
+    ```
+    Link IP address / FQDN = 20.91.140.166 / jnthackpfsense.swedencentral.cloudapp.azure.com
+    Link BGP address = 10.100.0.4
+    Link ASN = 65504
+    SA Lifetime in seconds = 10800
+    IKE Phase 1 
+        Encryption = AES256
+        Integrity/PRF = SHA256
+        DH Group = DHGroup14
+    IKE Phase 2
+        IPsec Encryption = GCMAES128
+        IPsec Integrity = GCMAES128
+        PFS Group = None
+    ```
 
 * Once configured, provide the coach with the public IP, default BGP IP for both VPN gateway instances, and the pre-shared key.
 * Check the status of the tunnels and BGP
