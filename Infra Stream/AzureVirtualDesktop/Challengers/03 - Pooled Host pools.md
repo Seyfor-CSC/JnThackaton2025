@@ -53,6 +53,8 @@ Not just from the data location point of view but also taking bandwith into acco
 
 Hint.: Not every service is available in every region. Try to use existing web apps to confirm AVD is available within your region.
 
+Since there are already several resources prepared in the environment, please deploy every resource in **North Europe**
+
 ### Cost
 In public cloud, deciding for every resource deployment should always be thought thoroughly. Every resource has a cost and the goal is to built cost-effective environment. More information can be found in the docs:
 
