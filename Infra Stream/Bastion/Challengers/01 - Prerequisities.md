@@ -1,4 +1,4 @@
-# Azure Virtual Desktop Deployment Prerequisites
+# Bastion Deployment Prerequisites
 
 Before starting with Bastion deployment in this hackathon, ensure all the following prerequisites are met. Carefully verify each item to avoid issues later in the deployment process.
 
