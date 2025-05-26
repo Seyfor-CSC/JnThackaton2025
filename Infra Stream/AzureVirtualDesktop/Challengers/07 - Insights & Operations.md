@@ -1,4 +1,4 @@
-# Challenge 05 - Insights & Operations Hackathon
+# Challenge 05 - Insights & Operations
 
 ## Overview
 In this challenge you will configure Insights to monitor the health of your AVD environment. On top of that you will get familiar with some basic AVD operations.
