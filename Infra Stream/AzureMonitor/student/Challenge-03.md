@@ -46,6 +46,6 @@ To accomplish this task, you will need to:
 
 ## Answers
 
-The coach need all the secrets.
+The coach know all the secrets.
 - If you are a coach, please check the [answers](./coach/05_answers.md) to this challenge.
 - If you are a participant, please ask your coach for the answers.
