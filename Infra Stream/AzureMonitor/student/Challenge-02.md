@@ -41,7 +41,7 @@ To accomplish this task, you will need to:
 - [VM Insights Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview)
 - [Azure Monitor Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview)
 - [Azure Monitor Agent Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview)
-- [Dependency Agent Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent)
+- [Dependency Agent Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-windows)
 - [Log Alert Rules Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule)
 - [Supported Metrics in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index)
 
