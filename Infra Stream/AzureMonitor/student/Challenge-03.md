@@ -16,7 +16,7 @@ To accomplish this task, you will need to:
    - Create a new Application Insights resource in your Azure subscription.
    - Configure the resource to monitor a specific application (e.g., a web app, etc.).
 2. Add availability tests to Application Insights
-   - Create availability tests to monitor the availability and performance of your application.
+   - Create availability tests to monitor the availability and check the performance of your application.
    - Configure the tests to run at regular intervals and send alerts if the application is unavailable.
 3. Find out metrics and thresholds
    - Use Application Insights to find out the most important metrics and thresholds for your application.
