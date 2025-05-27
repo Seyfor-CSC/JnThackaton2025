@@ -14,7 +14,7 @@ To accomplish this task, you will need to:
 - Investigate and set up some alert rules related to VM Insights.
 - Understand metric namespaces and their purpose.
 
-# VMs login
+## VMs login
   - admin_username = azureuser
   - admin_password = J&TP@ssw0rd1234!
 
