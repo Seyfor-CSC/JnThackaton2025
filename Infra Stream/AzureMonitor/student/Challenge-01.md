@@ -17,8 +17,9 @@ To accomplish this task, you will need to:
 ## Tasks
 - Create Log Analytics Workspace
 - Set "Export Activity Logs" from subscription to this workspace
+- On first Key Vault, enable Diagnostics Settings
 - Create a second Key Vault and enable Diagnostics Settings
-- Create Alert rules for both Key Vaults (Log - based on activity - Delete, Metric - based on API results - exclude everything but code 200)
+- Create Alert rules for both Key Vaults (Log - based on activity - Delete, Metric - based on API results - exclude code 200)
 - After 10 minutes, delete one of the Key Vaults
 
 ## Questions to think about
