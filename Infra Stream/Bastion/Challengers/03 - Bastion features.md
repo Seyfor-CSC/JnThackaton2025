@@ -44,4 +44,5 @@ For Azure Bastion, there are no pre-deployed resources.
 - [ ] You can access and review the recorded session
 
 ## Resources
-- [Azure Bastion Session Recording Documentation](https://learn.microsoft.com/en-us/azure/bastion/session-recording)
+- [Azure Bastion Session Recording Documentation](https://learn.microsoft.com/en-us/azure/bastion/session-recording)¨
+- [Native client](https://learn.microsoft.com/en-us/azure/bastion/connect-vm-native-client-windows)
