@@ -1,0 +1,925 @@
+{
+    "version": "Notebook/1.0",
+    "items": [
+        {
+            "type": 11,
+            "content": {
+                "version": "LinkItem/1.0",
+                "style": "tabs",
+                "links": [
+                    {
+                        "id": "e4bda35e-7437-4411-b0cb-07026297567c",
+                        "cellValue": "selectedtab",
+                        "linkTarget": "parameter",
+                        "linkLabel": "Overview",
+                        "subTarget": "overview",
+                        "style": "link"
+                    },
+                    {
+                        "id": "6c201654-3eb6-4b40-86e7-903c2444e049",
+                        "cellValue": "selectedtab",
+                        "linkTarget": "parameter",
+                        "linkLabel": "LA",
+                        "subTarget": "la",
+                        "style": "link"
+                    },
+                    {
+                        "id": "03891ca2-e148-4e94-8a50-9ef486dfeb3a",
+                        "cellValue": "selectedtab",
+                        "linkTarget": "parameter",
+                        "linkLabel": "SA",
+                        "subTarget": "sa",
+                        "style": "link"
+                    },
+                    {
+                        "id": "e746f56c-fe66-456a-a63a-1bf5b7a40137",
+                        "cellValue": "selectedtab",
+                        "linkTarget": "parameter",
+                        "linkLabel": "KV",
+                        "subTarget": "kv",
+                        "style": "link"
+                    },
+                    {
+                        "id": "293fe32e-d16a-4663-b343-80d4c4b957fd",
+                        "cellValue": "selectedtab",
+                        "linkTarget": "parameter",
+                        "linkLabel": "VM",
+                        "subTarget": "vm",
+                        "style": "link"
+                    },
+                    {
+                        "id": "893ccd9d-5d91-4c75-bf06-359d4da9c39d",
+                        "cellValue": "selectedtab",
+                        "linkTarget": "parameter",
+                        "linkLabel": "WebApp",
+                        "subTarget": "webapp",
+                        "style": "link"
+                    }
+                ]
+            },
+            "name": "links - 0"
+        },
+        {
+            "type": 9,
+            "content": {
+                "version": "KqlParameterItem/1.0",
+                "parameters": [
+                    {
+                        "id": "9a40277c-b070-4737-91bb-ec733e97208b",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "SelectTime",
+                        "type": 4,
+                        "isRequired": true,
+                        "typeSettings": {
+                            "selectableValues": [
+                                {
+                                    "durationMs": 300000
+                                },
+                                {
+                                    "durationMs": 900000
+                                },
+                                {
+                                    "durationMs": 1800000
+                                },
+                                {
+                                    "durationMs": 3600000
+                                },
+                                {
+                                    "durationMs": 14400000
+                                },
+                                {
+                                    "durationMs": 43200000
+                                },
+                                {
+                                    "durationMs": 86400000
+                                },
+                                {
+                                    "durationMs": 172800000
+                                },
+                                {
+                                    "durationMs": 259200000
+                                },
+                                {
+                                    "durationMs": 604800000
+                                },
+                                {
+                                    "durationMs": 1209600000
+                                },
+                                {
+                                    "durationMs": 2419200000
+                                },
+                                {
+                                    "durationMs": 2592000000
+                                },
+                                {
+                                    "durationMs": 5184000000
+                                },
+                                {
+                                    "durationMs": 7776000000
+                                }
+                            ]
+                        },
+                        "timeContext": {
+                            "durationMs": 86400000
+                        },
+                        "value": {
+                            "durationMs": 1209600000
+                        }
+                    },
+                    {
+                        "id": "b18fdf13-239d-48b3-bb38-2f68d3dfc444",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "Subscription",
+                        "type": 6,
+                        "isRequired": true,
+                        "multiSelect": true,
+                        "quote": "'",
+                        "delimiter": ",",
+                        "typeSettings": {
+                            "additionalResourceOptions": [],
+                            "includeAll": false
+                        },
+                        "timeContext": {
+                            "durationMs": 86400000
+                        },
+                        "value": [
+                            "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb",
+                            "/subscriptions/83cd8003-cfa0-4bf8-8c76-fbb3350e2e4b",
+                            "/subscriptions/ed8943dd-91ca-480e-b062-abaa4dc94fa2",
+                            "/subscriptions/e14eae24-a9ec-4bed-9ca0-de37ea64c8bb"
+                        ]
+                    },
+                    {
+                        "id": "fa967546-787e-475f-bef5-af23f9f5dfd2",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "Resource",
+                        "type": 7,
+                        "isHiddenWhenLocked": true,
+                        "typeSettings": {
+                            "additionalResourceOptions": [],
+                            "includeAll": true
+                        },
+                        "timeContext": {
+                            "durationMs": 86400000
+                        },
+                        "value": null
+                    }
+                ],
+                "style": "above",
+                "queryType": 0,
+                "resourceType": "microsoft.operationalinsights/workspaces"
+            },
+            "name": "parameters - 1"
+        },
+        {
+            "type": 12,
+            "content": {
+                "version": "NotebookGroup/1.0",
+                "groupType": "editable",
+                "title": "Overview",
+                "items": [
+                    {
+                        "type": 1,
+                        "content": {
+                            "json": "# Welcome to the Azure Workbook Overview Page\n## This workbook has been created specifically for hackathon purposes. It serves as a flexible and interactive platform to visualize, analyze, and present data within the Azure environment. Azure Workbooks provide a powerful canvas where you can combine text, metrics, logs, and rich visualizations to support collaborative analysis and decision-making.\n",
+                            "style": "info"
+                        },
+                        "name": "text - 0"
+                    },
+                    {
+                        "type": 3,
+                        "content": {
+                            "version": "KqlItem/1.0",
+                            "query": "summarize count() by location",
+                            "size": 2,
+                            "title": "Map",
+                            "queryType": 1,
+                            "resourceType": "microsoft.resourcegraph/resources",
+                            "crossComponentResources": [
+                                "{Subscription}"
+                            ],
+                            "visualization": "map",
+                            "mapSettings": {
+                                "locInfo": "AzureLoc",
+                                "locInfoColumn": "location",
+                                "sizeSettings": "count_",
+                                "sizeAggregation": "Sum",
+                                "labelSettings": "location",
+                                "legendMetric": "count_",
+                                "legendAggregation": "Sum",
+                                "itemColorSettings": {
+                                    "nodeColorField": "count_",
+                                    "colorAggregation": "Sum",
+                                    "type": "heatmap",
+                                    "heatmapPalette": "categorical"
+                                }
+                            }
+                        },
+                        "name": "query - 2"
+                    },
+                    {
+                        "type": 3,
+                        "content": {
+                            "version": "KqlItem/1.0",
+                            "query": "{\"version\":\"AzureHealthQuery/1.0\",\"queryType\":\"Detailed\"}",
+                            "size": 0,
+                            "title": "Resource health",
+                            "queryType": 4,
+                            "resourceType": "microsoft.resources/subscriptions",
+                            "crossComponentResources": [
+                                "{Subscription}"
+                            ],
+                            "gridSettings": {
+                                "formatters": [
+                                    {
+                                        "columnMatch": "$gen_group",
+                                        "formatter": 15,
+                                        "formatOptions": {
+                                            "linkTarget": null,
+                                            "showIcon": true
+                                        }
+                                    },
+                                    {
+                                        "columnMatch": "Availability state",
+                                        "formatter": 11
+                                    }
+                                ],
+                                "hierarchySettings": {
+                                    "treeType": 1,
+                                    "groupBy": [
+                                        "Subscription"
+                                    ],
+                                    "expandTopLevel": true
+                                }
+                            }
+                        },
+                        "name": "query - 1"
+                    }
+                ]
+            },
+            "conditionalVisibility": {
+                "parameterName": "selectedtab",
+                "comparison": "isEqualTo",
+                "value": "overview"
+            },
+            "name": "Overviewgroup - 4"
+        },
+        {
+            "type": 12,
+            "content": {
+                "version": "NotebookGroup/1.0",
+                "groupType": "editable",
+                "title": "SA",
+                "items": [
+                    {
+                        "type": 9,
+                        "content": {
+                            "version": "KqlParameterItem/1.0",
+                            "crossComponentResources": [
+                                "{Subscription}"
+                            ],
+                            "parameters": [
+                                {
+                                    "id": "94fd401d-265b-448c-866e-868588fd2769",
+                                    "version": "KqlParameterItem/1.0",
+                                    "name": "SelectSA",
+                                    "type": 5,
+                                    "multiSelect": true,
+                                    "quote": "'",
+                                    "delimiter": ",",
+                                    "query": "where type =~ \"microsoft.storage/storageaccounts\"\n|project id, name",
+                                    "crossComponentResources": [
+                                        "{Subscription}"
+                                    ],
+                                    "typeSettings": {
+                                        "additionalResourceOptions": [],
+                                        "showDefault": false
+                                    },
+                                    "timeContext": {
+                                        "durationMs": 86400000
+                                    },
+                                    "queryType": 1,
+                                    "resourceType": "microsoft.resourcegraph/resources",
+                                    "value": [
+                                        "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.Storage/storageAccounts/sadiag4hack01",
+                                        "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.Storage/storageAccounts/sainfrahack01"
+                                    ]
+                                }
+                            ],
+                            "style": "above",
+                            "queryType": 1,
+                            "resourceType": "microsoft.resourcegraph/resources"
+                        },
+                        "name": "parameters - 0"
+                    },
+                    {
+                        "type": 10,
+                        "content": {
+                            "chartId": "workbook88ba331a-1767-458b-8aae-b8d661bf3e32",
+                            "version": "MetricsItem/2.0",
+                            "size": 0,
+                            "chartType": 2,
+                            "resourceType": "microsoft.storage/storageaccounts",
+                            "metricScope": 0,
+                            "resourceParameter": "SelectSA",
+                            "resourceIds": [
+                                "{SelectSA}"
+                            ],
+                            "timeContext": {
+                                "durationMs": 14400000
+                            },
+                            "metrics": [
+                                {
+                                    "namespace": "microsoft.storage/storageaccounts/blobservices",
+                                    "metric": "microsoft.storage/storageaccounts/blobservices-Capacity-BlobCapacity",
+                                    "aggregation": 4
+                                }
+                            ],
+                            "title": "SA blob capacity",
+                            "gridSettings": {
+                                "rowLimit": 10000
+                            }
+                        },
+                        "name": "metric - 1"
+                    },
+                    {
+                        "type": 10,
+                        "content": {
+                            "chartId": "workbook8e09e1f7-da85-4a0c-ac87-eb387ceb900e",
+                            "version": "MetricsItem/2.0",
+                            "size": 0,
+                            "chartType": 2,
+                            "resourceType": "microsoft.storage/storageaccounts",
+                            "metricScope": 0,
+                            "resourceParameter": "SelectSA",
+                            "resourceIds": [
+                                "{SelectSA}"
+                            ],
+                            "timeContextFromParameter": "SelectTime",
+                            "timeContext": {
+                                "durationMs": 1209600000
+                            },
+                            "metrics": [
+                                {
+                                    "namespace": "microsoft.storage/storageaccounts",
+                                    "metric": "microsoft.storage/storageaccounts-Transaction-Availability",
+                                    "aggregation": 4
+                                }
+                            ],
+                            "title": "SA availability",
+                            "gridSettings": {
+                                "rowLimit": 10000
+                            }
+                        },
+                        "name": "metric - 2"
+                    }
+                ]
+            },
+            "conditionalVisibility": {
+                "parameterName": "selectedtab",
+                "comparison": "isEqualTo",
+                "value": "sa"
+            },
+            "name": "SAgroup - 2"
+        },
+        {
+            "type": 12,
+            "content": {
+                "version": "NotebookGroup/1.0",
+                "groupType": "editable",
+                "title": "LA",
+                "items": [
+                    {
+                        "type": 3,
+                        "content": {
+                            "version": "KqlItem/1.0",
+                            "query": "Usage\n| where IsBillable == true\n| project  DataType, Quantity\n",
+                            "size": 2,
+                            "title": "Billable",
+                            "timeContextFromParameter": "SelectTime",
+                            "queryType": 0,
+                            "resourceType": "microsoft.operationalinsights/workspaces",
+                            "crossComponentResources": [
+                                "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.OperationalInsights/workspaces/infra-hack-la"
+                            ],
+                            "visualization": "piechart",
+                            "gridSettings": {
+                                "sortBy": [
+                                    {
+                                        "itemKey": "QuantityUnit",
+                                        "sortOrder": 1
+                                    }
+                                ]
+                            },
+                            "sortBy": [
+                                {
+                                    "itemKey": "QuantityUnit",
+                                    "sortOrder": 1
+                                }
+                            ]
+                        },
+                        "name": "query - 0"
+                    },
+                    {
+                        "type": 3,
+                        "content": {
+                            "version": "KqlItem/1.0",
+                            "query": "Usage\n| where IsBillable == false\n| project  DataType, Quantity\n| render piechart",
+                            "size": 4,
+                            "title": "NonBillable",
+                            "timeContextFromParameter": "SelectTime",
+                            "queryType": 0,
+                            "resourceType": "microsoft.operationalinsights/workspaces",
+                            "crossComponentResources": [
+                                "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.OperationalInsights/workspaces/infra-hack-la"
+                            ]
+                        },
+                        "name": "query - 1"
+                    },
+                    {
+                        "type": 3,
+                        "content": {
+                            "version": "KqlItem/1.0",
+                            "query": "AzureActivity\n        | where ActivityStatusValue == 'Accept'\n        or ActivityStatusValue == \"Failure\"\n        or ActivityStatusValue == \"Start\"\n        or ActivityStatusValue == \"Success\"\n        | project TimeGenerated, Caller, Level, OperationNameValue,  ActivityStatusValue,  ResourceId = _ResourceId",
+                            "size": 0,
+                            "title": "ActivityLog",
+                            "timeContextFromParameter": "SelectTime",
+                            "queryType": 0,
+                            "resourceType": "microsoft.operationalinsights/workspaces",
+                            "crossComponentResources": [
+                                "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.OperationalInsights/workspaces/infra-hack-la"
+                            ],
+                            "gridSettings": {
+                                "formatters": [
+                                    {
+                                        "columnMatch": "OperationNameValue",
+                                        "formatter": 18,
+                                        "formatOptions": {
+                                            "thresholdsOptions": "colors",
+                                            "thresholdsGrid": [
+                                                {
+                                                    "operator": "contains",
+                                                    "thresholdValue": "WRITE",
+                                                    "representation": "orange",
+                                                    "text": "{0}{1}"
+                                                },
+                                                {
+                                                    "operator": "contains",
+                                                    "thresholdValue": "DELETE",
+                                                    "representation": "redBright",
+                                                    "text": "{0}{1}"
+                                                },
+                                                {
+                                                    "operator": "contains",
+                                                    "thresholdValue": "ACTION",
+                                                    "representation": "blue",
+                                                    "text": "{0}{1}"
+                                                },
+                                                {
+                                                    "operator": "contains",
+                                                    "thresholdValue": "READ",
+                                                    "representation": "green",
+                                                    "text": "{0}{1}"
+                                                },
+                                                {
+                                                    "operator": "Default",
+                                                    "thresholdValue": null,
+                                                    "text": "{0}{1}"
+                                                }
+                                            ],
+                                            "compositeBarSettings": {
+                                                "labelText": "",
+                                                "columnSettings": [
+                                                    {
+                                                        "columnName": "OperationNameValue",
+                                                        "color": "lightBlue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "name": "query - 2"
+                    }
+                ]
+            },
+            "conditionalVisibility": {
+                "parameterName": "selectedtab",
+                "comparison": "isEqualTo",
+                "value": "la"
+            },
+            "name": "LAgroup - 3"
+        },
+        {
+            "type": 12,
+            "content": {
+                "version": "NotebookGroup/1.0",
+                "groupType": "editable",
+                "title": "KV",
+                "items": [
+                    {
+                        "type": 9,
+                        "content": {
+                            "version": "KqlParameterItem/1.0",
+                            "crossComponentResources": [
+                                "{Subscription}"
+                            ],
+                            "parameters": [
+                                {
+                                    "id": "d5b883c7-7218-4dbd-88c7-510c2f2832d2",
+                                    "version": "KqlParameterItem/1.0",
+                                    "name": "SelectKV",
+                                    "type": 5,
+                                    "multiSelect": true,
+                                    "quote": "'",
+                                    "delimiter": ",",
+                                    "query": "where type =~ 'microsoft.keyvault/vaults'\n| project id, name",
+                                    "crossComponentResources": [
+                                        "{Subscription}"
+                                    ],
+                                    "typeSettings": {
+                                        "additionalResourceOptions": []
+                                    },
+                                    "timeContext": {
+                                        "durationMs": 86400000
+                                    },
+                                    "queryType": 1,
+                                    "resourceType": "microsoft.resourcegraph/resources",
+                                    "value": [
+                                        "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.KeyVault/vaults/infra-hack-kv011"
+                                    ]
+                                }
+                            ],
+                            "style": "above",
+                            "queryType": 1,
+                            "resourceType": "microsoft.resourcegraph/resources"
+                        },
+                        "name": "parameters - 0"
+                    },
+                    {
+                        "type": 3,
+                        "content": {
+                            "version": "KqlItem/1.0",
+                            "query": "AzureActivity\n| where OperationNameValue contains \"VAULT\"\n| where ActivityStatusValue == 'Accept'\nor ActivityStatusValue == \"Failure\"\nor ActivityStatusValue == \"Start\"\nor ActivityStatusValue == \"Success\"\n| project TimeGenerated, Caller, Level, OperationNameValue,  ActivityStatusValue,  ResourceId = _ResourceId",
+                            "size": 0,
+                            "title": "Actions on KV",
+                            "timeContextFromParameter": "SelectTime",
+                            "queryType": 0,
+                            "resourceType": "microsoft.operationalinsights/workspaces",
+                            "crossComponentResources": [
+                                "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.OperationalInsights/workspaces/infra-hack-la"
+                            ],
+                            "gridSettings": {
+                                "formatters": [
+                                    {
+                                        "columnMatch": "OperationNameValue",
+                                        "formatter": 18,
+                                        "formatOptions": {
+                                            "thresholdsOptions": "colors",
+                                            "thresholdsGrid": [
+                                                {
+                                                    "operator": "contains",
+                                                    "thresholdValue": "WRITE",
+                                                    "representation": "orange",
+                                                    "text": "{0}{1}"
+                                                },
+                                                {
+                                                    "operator": "contains",
+                                                    "thresholdValue": "DELETE",
+                                                    "representation": "redBright",
+                                                    "text": "{0}{1}"
+                                                },
+                                                {
+                                                    "operator": "contains",
+                                                    "thresholdValue": "READ",
+                                                    "representation": "green",
+                                                    "text": "{0}{1}"
+                                                },
+                                                {
+                                                    "operator": "Default",
+                                                    "thresholdValue": null,
+                                                    "text": "{0}{1}"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "name": "query - 1"
+                    },
+                    {
+                        "type": 10,
+                        "content": {
+                            "chartId": "workbooke4e99b97-5826-41e3-a57d-6cd1012cd3a6",
+                            "version": "MetricsItem/2.0",
+                            "size": 0,
+                            "chartType": 2,
+                            "resourceType": "microsoft.keyvault/vaults",
+                            "metricScope": 0,
+                            "resourceParameter": "SelectKV",
+                            "resourceIds": [
+                                "{SelectKV}"
+                            ],
+                            "timeContextFromParameter": "SelectTime",
+                            "timeContext": {
+                                "durationMs": 0
+                            },
+                            "metrics": [
+                                {
+                                    "namespace": "microsoft.keyvault/vaults",
+                                    "metric": "microsoft.keyvault/vaults--Availability",
+                                    "aggregation": 4,
+                                    "splitBy": null
+                                }
+                            ],
+                            "title": "KV availability",
+                            "gridSettings": {
+                                "rowLimit": 10000
+                            }
+                        },
+                        "name": "metric - 2"
+                    }
+                ]
+            },
+            "conditionalVisibility": {
+                "parameterName": "selectedtab",
+                "comparison": "isEqualTo",
+                "value": "kv"
+            },
+            "name": "KVgroup - 5"
+        },
+        {
+            "type": 12,
+            "content": {
+                "version": "NotebookGroup/1.0",
+                "groupType": "editable",
+                "title": "VM",
+                "items": [
+                    {
+                        "type": 9,
+                        "content": {
+                            "version": "KqlParameterItem/1.0",
+                            "crossComponentResources": [
+                                "{Subscription}"
+                            ],
+                            "parameters": [
+                                {
+                                    "id": "1fc36a0f-c8b2-4e5e-bbd8-acb878371d93",
+                                    "version": "KqlParameterItem/1.0",
+                                    "name": "SelectVM",
+                                    "type": 5,
+                                    "multiSelect": true,
+                                    "quote": "'",
+                                    "delimiter": ",",
+                                    "query": "where type =~ \"microsoft.compute/virtualmachines\"\n| project id, name",
+                                    "crossComponentResources": [
+                                        "{Subscription}"
+                                    ],
+                                    "typeSettings": {
+                                        "additionalResourceOptions": []
+                                    },
+                                    "timeContext": {
+                                        "durationMs": 86400000
+                                    },
+                                    "queryType": 1,
+                                    "resourceType": "microsoft.resourcegraph/resources",
+                                    "value": [
+                                        "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.Compute/virtualMachines/hack-win-vm01"
+                                    ]
+                                }
+                            ],
+                            "style": "above",
+                            "queryType": 1,
+                            "resourceType": "microsoft.resourcegraph/resources"
+                        },
+                        "name": "parameters - 0"
+                    },
+                    {
+                        "type": 10,
+                        "content": {
+                            "chartId": "workbook2a83c36c-1f88-4643-a7ee-bcf1b830e627",
+                            "version": "MetricsItem/2.0",
+                            "size": 0,
+                            "chartType": 2,
+                            "resourceType": "microsoft.compute/virtualmachines",
+                            "metricScope": 0,
+                            "resourceParameter": "SelectVM",
+                            "resourceIds": [
+                                "{SelectVM}"
+                            ],
+                            "timeContextFromParameter": "SelectTime",
+                            "timeContext": {
+                                "durationMs": 0
+                            },
+                            "metrics": [
+                                {
+                                    "namespace": "microsoft.compute/virtualmachines",
+                                    "metric": "microsoft.compute/virtualmachines--Percentage CPU",
+                                    "aggregation": 4,
+                                    "splitBy": null
+                                }
+                            ],
+                            "title": "Virtual Machine CPU",
+                            "gridSettings": {
+                                "rowLimit": 10000
+                            }
+                        },
+                        "name": "metric - 1"
+                    },
+                    {
+                        "type": 10,
+                        "content": {
+                            "chartId": "workbook445c1f89-a610-430d-88a1-262c53b5bb1d",
+                            "version": "MetricsItem/2.0",
+                            "size": 0,
+                            "chartType": 2,
+                            "resourceType": "microsoft.compute/virtualmachines",
+                            "metricScope": 0,
+                            "resourceParameter": "SelectVM",
+                            "resourceIds": [
+                                "{SelectVM}"
+                            ],
+                            "timeContextFromParameter": "SelectTime",
+                            "timeContext": {
+                                "durationMs": 0
+                            },
+                            "metrics": [
+                                {
+                                    "namespace": "microsoft.compute/virtualmachines",
+                                    "metric": "microsoft.compute/virtualmachines--Available Memory Bytes",
+                                    "aggregation": 4,
+                                    "splitBy": null
+                                }
+                            ],
+                            "title": "VM Available memory",
+                            "gridSettings": {
+                                "rowLimit": 10000
+                            }
+                        },
+                        "name": "metric - 2"
+                    }
+                ]
+            },
+            "conditionalVisibility": {
+                "parameterName": "selectedtab",
+                "comparison": "isEqualTo",
+                "value": "vm"
+            },
+            "name": "VMgroup - 6"
+        },
+        {
+            "type": 12,
+            "content": {
+                "version": "NotebookGroup/1.0",
+                "groupType": "editable",
+                "title": "WebApp",
+                "items": [
+                    {
+                        "type": 9,
+                        "content": {
+                            "version": "KqlParameterItem/1.0",
+                            "crossComponentResources": [
+                                "{Subscription}"
+                            ],
+                            "parameters": [
+                                {
+                                    "id": "75c02567-5923-43d3-8003-d9d80cd1592a",
+                                    "version": "KqlParameterItem/1.0",
+                                    "name": "SelectAppPlan",
+                                    "type": 5,
+                                    "multiSelect": true,
+                                    "quote": "'",
+                                    "delimiter": ",",
+                                    "query": "where type =~ \"microsoft.web/serverfarms\"\n|project id, name",
+                                    "crossComponentResources": [
+                                        "{Subscription}"
+                                    ],
+                                    "typeSettings": {
+                                        "additionalResourceOptions": [],
+                                        "showDefault": false
+                                    },
+                                    "timeContext": {
+                                        "durationMs": 86400000
+                                    },
+                                    "queryType": 1,
+                                    "resourceType": "microsoft.resourcegraph/resources",
+                                    "value": [
+                                        "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.Web/serverFarms/ASP-inframonhackrg-a888"
+                                    ]
+                                },
+                                {
+                                    "id": "5c9e1f0c-5aba-4734-a167-9f71fabaceb4",
+                                    "version": "KqlParameterItem/1.0",
+                                    "name": "SelectWebApp",
+                                    "type": 5,
+                                    "multiSelect": true,
+                                    "quote": "'",
+                                    "delimiter": ",",
+                                    "query": "where type =~ \"microsoft.web/sites\"\n|project id, name",
+                                    "crossComponentResources": [
+                                        "{Subscription}"
+                                    ],
+                                    "typeSettings": {
+                                        "additionalResourceOptions": []
+                                    },
+                                    "timeContext": {
+                                        "durationMs": 86400000
+                                    },
+                                    "queryType": 1,
+                                    "resourceType": "microsoft.resourcegraph/resources",
+                                    "value": [
+                                        "/subscriptions/ef8ffa7c-1fed-43b5-96b5-cc3bd06d63cb/resourceGroups/infra-mon-hack-rg/providers/Microsoft.Web/sites/rojopasn"
+                                    ]
+                                }
+                            ],
+                            "style": "pills",
+                            "queryType": 1,
+                            "resourceType": "microsoft.resourcegraph/resources"
+                        },
+                        "name": "parameters - 0"
+                    },
+                    {
+                        "type": 10,
+                        "content": {
+                            "chartId": "82ba614c-efa5-4402-be2f-f5d01a9521f3",
+                            "version": "MetricsItem/2.0",
+                            "size": 0,
+                            "chartType": 2,
+                            "resourceType": "microsoft.web/sites",
+                            "metricScope": 0,
+                            "resourceParameter": "SelectWebApp",
+                            "resourceIds": [
+                                "{SelectWebApp}"
+                            ],
+                            "timeContextFromParameter": "SelectTime",
+                            "timeContext": {
+                                "durationMs": 1209600000
+                            },
+                            "metrics": [
+                                {
+                                    "namespace": "microsoft.web/sites",
+                                    "metric": "microsoft.web/sites--Http5xx",
+                                    "aggregation": 1
+                                },
+                                {
+                                    "namespace": "microsoft.web/sites",
+                                    "metric": "microsoft.web/sites--Http404",
+                                    "aggregation": 1
+                                }
+                            ],
+                            "title": "WebApp",
+                            "gridSettings": {
+                                "rowLimit": 10000
+                            }
+                        },
+                        "name": "metric - 8"
+                    },
+                    {
+                        "type": 10,
+                        "content": {
+                            "chartId": "workbook091e4158-607c-4f35-a183-b85dd7869913",
+                            "version": "MetricsItem/2.0",
+                            "size": 0,
+                            "chartType": 2,
+                            "resourceType": "microsoft.web/serverfarms",
+                            "metricScope": 0,
+                            "resourceParameter": "SelectAppPlan",
+                            "resourceIds": [
+                                "{SelectAppPlan}"
+                            ],
+                            "timeContextFromParameter": "SelectTime",
+                            "timeContext": {
+                                "durationMs": 1209600000
+                            },
+                            "metrics": [
+                                {
+                                    "namespace": "microsoft.web/serverfarms",
+                                    "metric": "microsoft.web/serverfarms--CpuPercentage",
+                                    "aggregation": 4
+                                }
+                            ],
+                            "title": "ASP",
+                            "gridSettings": {
+                                "rowLimit": 10000
+                            }
+                        },
+                        "name": "metric - 2"
+                    }
+                ]
+            },
+            "conditionalVisibility": {
+                "parameterName": "selectedtab",
+                "comparison": "isEqualTo",
+                "value": "webapp"
+            },
+            "name": "WebAppgroup - 7"
+        }
+    ],
+    "fallbackResourceIds": [
+        "azure monitor"
+    ],
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
+}
