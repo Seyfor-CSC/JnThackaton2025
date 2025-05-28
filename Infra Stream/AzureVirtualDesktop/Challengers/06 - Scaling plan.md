@@ -36,4 +36,4 @@ Create the scaling plan, assign it to the host pool and simulate new user connec
 ## Resources
 - [Azure Virtual Desktop scaling plans](https://learn.microsoft.com/en-us/azure/virtual-desktop/scaling-plan)
 - [Create a scaling plan in Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/create-scaling-plan)
-- [Best practices for scaling plans](https://learn.microsoft.com/en-us/azure/virtual-desktop/scaling-plan-best-practices)
+- [Example](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-scenarios)
