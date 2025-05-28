@@ -14,6 +14,10 @@ To accomplish this task, you will need to:
 - Investigate and set up some alert rules related to VM Insights.
 - Understand metric namespaces and their purpose.
 
+## VMs login
+  - admin_username = azureuser
+  - admin_password = J&TP@ssw0rd1234!
+
 ## Tasks
 - Enable VM Insights on VM01 (incl. dependencies) and point them into Log Analytics Workspace you created in previous challenge.
 - Create Alert rules related to metrics from VM Insights. Check documentation to successfully determine correct thresholds and dimensions.
@@ -37,12 +41,12 @@ To accomplish this task, you will need to:
 - [VM Insights Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview)
 - [Azure Monitor Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview)
 - [Azure Monitor Agent Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview)
-- [Dependency Agent Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent)
+- [Dependency Agent Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-windows)
 - [Log Alert Rules Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule)
 - [Supported Metrics in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index)
 
 ## Answers
 
-The coach need all the secrets.
+The coach know all the secrets.
 - If you are a coach, please check the [answers](./coach/02_answers.md) to this challenge.
 - If you are a participant, please ask your coach for the answers.
