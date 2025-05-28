@@ -1,7 +1,7 @@
 # Azure provider configuration
 provider "azurerm" {
   features {}
-  subscription_id = "8c9523e9-1b9e-4de9-b847-145be9be0b12"
+  subscription_id = ""
 }
 
 # Resource Group
