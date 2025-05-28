@@ -8,7 +8,7 @@ In this challenge, you will practice securely publishing a web page to the inter
 
 ## Description
 
-* Create a simple web application on WebApp Service.
+* Create a simple web application on WebApp Service. You can use this demo app - https://github.com/Azure-Samples/app-service-web-dotnet-get-started
 * Disable internet access to the WebApp and allow access only within the internal network.
 * Deploy Azure Front Door and make the WebApp page accessible from the internet by publishing it through Front Door, ensuring that communication between Front Door and the WebApp does not traverse the public internet.
 * (Bonus) Publish the web page running on the VM from Challenge 4 through Front Door as well, again ensuring that communication between Front Door and the VM does not go over the public internet.
