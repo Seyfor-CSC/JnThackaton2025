@@ -20,14 +20,14 @@ To accomplish this task, you will need to:
     - The first query should find billable logs and output a pie chart
     - The second query should find non-billable logs and output a pie chart
 
-        ```
+        ```kql
         Usage
         | where IsBillable == true
         | project DataType, Quantity
         | render piechart
         ```
 
-        ```
+        ```kql
         Usage
         | where IsBillable == false
         | project DataType, Quantity
@@ -50,7 +50,7 @@ To accomplish this task, you will need to:
       - Red for DELETE
       - Blue for WRITE
 
-        ```
+        ```kql
         AzureActivity
         | where ActivityStatusValue == 'Accept'
         or ActivityStatusValue == "Failure"
